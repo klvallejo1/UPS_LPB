@@ -146,7 +146,7 @@ body{
   
 #formulario {
     background-color: #f2f2f2;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 0.5rem;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -261,6 +261,19 @@ textarea{
 
 .btn-secondary:hover{
     background-color: var(--secundario);
+}
+
+.conectate h2{
+    font-size: 5rem;
+    line-height: 7rem;
+    color: var(--negro);
+    text-transform: uppercase;
+    padding: 0 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.conectate-content{
+    text-align: center;
 }
 
 /**Footer**/

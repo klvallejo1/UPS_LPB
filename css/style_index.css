@@ -289,6 +289,19 @@ body{
     max-width: 50rem;
 }
 
+.conectate h2{
+    font-size: 5.5rem;
+    line-height: 7rem;
+    color: var(--negro);
+    text-transform: uppercase;
+    padding: 0 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.conectate-content{
+    text-align: center;
+}
+
 /**Footer**/
 .footer{
     background-image: linear-gradient(
