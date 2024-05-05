@@ -150,6 +150,18 @@ body{
     margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+    .integrantes-content {
+      flex-direction: column;
+    }
+  
+    .integrantes-img1 {
+      max-width: 100%;
+      padding-right: 0;
+      margin-bottom: 2rem; /* Ajusta el margen inferior según sea necesario */
+    }
+  }
+
 .integrantes h2{
     font-size: 5.5rem;
     line-height: 7rem;
@@ -250,6 +262,66 @@ body{
     width: 100%;
     max-width: 40rem;
 }
+
+/* Estilos para la nueva sección */
+.nueva-seccion {
+    padding: 4rem 0;
+    text-align: center; 
+}
+  
+  .nueva-seccion-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nueva-seccion-texto {
+    flex: 1;
+    font-size: 2rem;
+    color: var(--secundario_oscuro);
+    text-align: justify;
+  }
+  
+  .nueva-seccion-imagen {
+    flex: 1; 
+    padding-left: 4rem;
+  }
+  
+  .nueva-seccion-imagen img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .nueva-seccion2 {
+    padding: 4rem 0;
+    text-align: center; 
+}
+  
+  .nueva-seccion2-content {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nueva-seccion2-texto {
+    flex: 1;
+    font-size: 2rem;
+    color: var(--secundario_oscuro);
+    text-align: justify;
+  }
+  
+  .nueva-seccion2-imagen {
+    flex: 1; 
+    padding-right: 4rem;
+  }
+  
+  .nueva-seccion2-imagen img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
 
 /**Videos**/
 .videos{
