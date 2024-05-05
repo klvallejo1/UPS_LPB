@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mejorar!</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_formulario.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header" id="header">
@@ -18,8 +19,8 @@
     
           <nav class="navbar">
             <ul>
-              <li><a href="/index.html">Formulario</a></li>
-              <li><a href="/index.html">Conéctate</a></li>
+              <li><a href="#formulario">Formulario</a></li>
+              <li><a href="#conectate">Conéctate</a></li>
             </ul>
           </nav>
         </div>
@@ -33,6 +34,39 @@
         </div>
       </header>
 
+      <div class="container-formulario">
+        <form id="formulario">
+          <h2>Califica nuestra página</h2>
+          <div class="form-group">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="No usaremos tu nombre con fines lucrativos" required>
+          </div>
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+          </div>
+          <div class="form-group">
+            <label for="calificacion">Calificación</label>
+            <div class="rating">
+              <input type="number" name="rating" hidden required>
+              <i class='bx bx-star star'></i>
+              <i class='bx bx-star star'></i>
+              <i class='bx bx-star star'></i>
+              <i class='bx bx-star star'></i>
+              <i class='bx bx-star star'></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="opinion">Opinión</label>
+            <textarea id="opinion" name="opinion" rows="4" placeholder="Sugerencias, reclamos, entre otros..." required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Borrar</button>
+          </div>
+        </form>
+      </div>
+      
       <footer class="footer" id="conectate">
         <h2>CONÉCTATE</h2>
     
@@ -82,5 +116,7 @@
             <small>&copy; 2024 <b>Kevin Vallejo - UPS</b></small>
           </div>
       </footer>
+
+      <script src="/javascript/script.js"></script>
 </body>
 </html>
